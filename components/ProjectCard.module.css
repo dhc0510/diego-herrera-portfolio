@@ -1,0 +1,252 @@
+.card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.16);
+  transition:
+    border-color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-bright);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.25);
+}
+
+.featured {
+  border-color: #293b5c;
+  box-shadow:
+    0 24px 90px rgba(0, 0, 0, 0.25),
+    0 0 80px rgba(59, 130, 246, 0.05);
+}
+
+.content {
+  padding: 34px;
+}
+
+.projectTop,
+.projectTop > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.number {
+  color: var(--accent-light);
+  font-family: monospace;
+  font-size: 11px;
+}
+
+.category {
+  color: var(--muted-dark);
+  font-size: 11px;
+}
+
+.number::after {
+  margin-left: 10px;
+  color: #333;
+  content: "/";
+}
+
+.flag {
+  padding: 5px 8px;
+  border: 1px solid rgba(59, 130, 246, 0.23);
+  border-radius: 999px;
+  color: #8db8fa;
+  background: rgba(59, 130, 246, 0.07);
+  font-size: 9px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  max-width: 600px;
+  margin: 22px 0 12px;
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.summary {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.caseGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.caseGrid > div {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.caseGrid span,
+.architecture > span,
+.metaLabel {
+  color: var(--muted-dark);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.caseGrid p {
+  margin: 8px 0 0;
+  color: #c5c5ca;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.architecture {
+  margin-top: 26px;
+}
+
+.architecture > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 11px;
+}
+
+.architecture > div > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d4d4d8;
+  font-family: monospace;
+  font-size: 10px;
+}
+
+.architecture i {
+  color: #414148;
+  font-style: normal;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+
+.metaGrid ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 18px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.metaGrid li {
+  position: relative;
+  padding-left: 11px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.metaGrid li::before {
+  position: absolute;
+  top: 0.68em;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.stack span {
+  padding: 5px 8px;
+  border: 1px solid #29292b;
+  border-radius: 6px;
+  color: #b3b3ba;
+  background: #151515;
+  font-family: monospace;
+  font-size: 9px;
+}
+
+.actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--border-bright);
+  border-radius: 8px;
+  color: #ceced3;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 11px;
+  font-weight: 500;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.actions a:hover {
+  transform: translateY(-1px);
+  border-color: #4a4a4f;
+  color: white;
+}
+
+.actions a:last-child {
+  border-color: #285fb7;
+  color: #e8f1ff;
+  background: #1d4f9d;
+}
+
+@media (max-width: 680px) {
+  .content {
+    padding: 24px 20px;
+  }
+
+  .flag {
+    display: none;
+  }
+
+  .caseGrid,
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .caseGrid {
+    gap: 10px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions a {
+    justify-content: center;
+  }
+}
