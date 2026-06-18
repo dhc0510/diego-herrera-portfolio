@@ -9,8 +9,17 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const socialImage = {
+  url: `${siteUrl}/opengraph-image`,
+  width: 1200,
+  height: 630,
+  alt: "Diego Herrera Chaves - Software Engineer",
+  type: "image/png",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "Diego Herrera Chaves Portfolio",
   title: {
     default: "Diego Herrera Chaves | Software Engineer",
     template: "%s | Diego Herrera Chaves",
@@ -29,23 +38,38 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Diego Herrera Chaves" }],
   creator: "Diego Herrera Chaves",
+  publisher: "Diego Herrera Chaves",
+  category: "technology",
   alternates: {
-    canonical: "/",
+    canonical: siteUrl,
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "/",
+    url: siteUrl,
     title: "Diego Herrera Chaves | Software Engineer",
     description:
       "Backend-focused Software Engineer building reliable full-stack products and business systems.",
-    siteName: "Diego Herrera Chaves — Portfolio",
+    siteName: "Diego Herrera Chaves | Portfolio",
+    images: [socialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Diego Herrera Chaves | Software Engineer",
     description:
       "Backend-focused Software Engineer building reliable full-stack products and business systems.",
+    images: [socialImage.url],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   icons: {
     icon: "/icon.svg",

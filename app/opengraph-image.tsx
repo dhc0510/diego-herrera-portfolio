@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Diego Herrera Chaves — Software Engineer";
+export const alt = "Diego Herrera Chaves - Software Engineer";
 export const size = {
   width: 1200,
   height: 630,
@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
               marginBottom: 18,
             }}
           >
-            Backend · Full-Stack
+            Backend / Full-Stack
           </div>
           <div
             style={{

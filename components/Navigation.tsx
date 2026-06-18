@@ -87,7 +87,7 @@ export function Navigation() {
           ))}
         </div>
 
-        <a className={styles.contact} href={links.email}>
+        <a className={styles.contact} href="#contact">
           Let&apos;s talk <ArrowUpRight size={15} />
         </a>
 
