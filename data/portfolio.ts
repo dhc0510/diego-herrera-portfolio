@@ -90,40 +90,27 @@ export const skillGroups = [
 export const projects: Project[] = [
   {
     number: "01",
-    title: "Vibrant Commerce Platform",
-    category: "Full-stack commerce and inventory system",
+    title: "Inventory SaaS System",
+    category: "Multi-tenant inventory and product management",
     summary:
-      "A complete online store for a fitness boutique, combining the customer shopping experience with inventory and commercial administration.",
+      "A comprehensive SaaS platform for multiple companies to manage product inventory, stock control, and administrative workflows.",
     problem:
-      "Vibrant needed one system to sell products online while keeping its catalog, categories, inventory, payments and purchasing workflows organized.",
+      "Multiple companies needed a scalable solution to manage products, inventory levels, stock control, and administrative operations across different tenants.",
     impact:
-      "Connected the storefront and internal operations in a server-rendered Java application packaged as a WAR and deployed on a VPS.",
-    stack: [
-      "Java 17",
-      "Maven",
-      "Java EE / Jakarta EE",
-      "JSF 2.3",
-      "PrimeFaces 12",
-      "XHTML",
-      "CDI / Weld",
-      "Servlet API",
-      "MariaDB",
-      "WAR",
-    ],
+      "Built a multi-tenant architecture with Spring Boot and React, enabling companies to manage their entire product lifecycle from a single platform.",
+    stack: ["Java Spring Boot", "React", "TypeScript", "MySQL", "Docker", "Git"],
     architecture: [
-      "JSF + PrimeFaces",
-      "CDI / Weld",
-      "Java EE services",
-      "MariaDB",
-      "WAR on VPS",
+      "Multi-tenant Spring Boot",
+      "React frontend",
+      "MySQL database",
+      "Docker containerization",
     ],
     features: [
-      "Product catalog",
-      "Shopping cart",
-      "Inventory management",
-      "Categories and filters",
-      "Payment workflows",
-      "Store administration",
+      "Product management",
+      "Stock control",
+      "Multi-tenant isolation",
+      "Admin workflows",
+      "Relational database design",
     ],
     visual: "vibrant",
     featured: true,
@@ -131,21 +118,21 @@ export const projects: Project[] = [
   },
   {
     number: "02",
-    title: "Medical Appointment System",
+    title: "Medical Appointment SaaS",
     category: "Full-stack healthcare application",
     summary:
-      "A full-stack appointment and administrative platform designed around the daily workflow of a medical office.",
+      "A reusable SaaS platform for medical offices to manage appointment scheduling, patient records, and administrative workflows.",
     problem:
-      "Appointment coordination and administrative tracking depended on repetitive, disconnected manual processes.",
+      "Medical offices needed a dedicated system for scheduling appointments, managing patient information, and automating administrative tasks.",
     impact:
-      "Centralized scheduling and operational records through a responsive React interface and a structured Spring Boot backend.",
-    stack: ["React", "TypeScript", "Spring Boot", "MySQL", "REST APIs"],
-    architecture: ["React client", "REST API", "Spring Boot", "MySQL"],
+      "Delivered a responsive platform with Spring Boot backend, React frontend, authentication, and database-driven patient management.",
+    stack: ["Java Spring Boot", "React", "TypeScript", "MySQL", "Docker", "Git"],
+    architecture: ["Spring Boot REST API", "React client", "MySQL", "Authentication layer"],
     features: [
       "Appointment scheduling",
+      "Patient management",
       "Secure authentication",
-      "Administrative dashboard",
-      "Relational data model",
+      "Admin workflows",
       "Responsive interface",
     ],
     visual: "medical",
@@ -156,37 +143,92 @@ export const projects: Project[] = [
     title: "API Integration Platform",
     category: "Backend and integration engineering",
     summary:
-      "A backend-focused platform for consuming external APIs, processing JSON responses and exposing reliable application data.",
+      "A backend platform for consuming third-party APIs, handling authentication, error responses, and normalizing API outputs.",
     problem:
-      "External services can introduce inconsistent payloads, authentication requirements, latency and recoverable failures.",
+      "External services introduce inconsistent payloads, authentication challenges, and error handling complexity.",
     impact:
-      "Designed a predictable integration layer that separates API communication, validation, error handling and data processing.",
-    stack: ["Spring Boot", "REST APIs", "JSON", "Authentication"],
+      "Designed a predictable integration layer that handles authentication, error responses, JSON parsing, and normalized API outputs.",
+    stack: ["Spring Boot", "REST APIs", "JSON", "Authentication", "Error Handling"],
     architecture: [
-      "External APIs",
-      "Integration service",
-      "Data processing",
-      "Application layer",
+      "External API consumption",
+      "Integration service layer",
+      "Error handling",
+      "Response normalization",
     ],
     features: [
-      "API consumption",
+      "Third-party API consumption",
       "Authentication handling",
-      "Error handling",
-      "JSON processing",
-      "Response normalization",
+      "Error response management",
+      "JSON parsing",
+      "Normalized outputs",
     ],
     visual: "api",
   },
   {
     number: "04",
-    title: "Monarca Swimwear",
-    category: "Vanilla frontend landing page",
+    title: "Vibrant Supplements Store",
+    category: "Full-stack commerce application",
     summary:
-      "A polished landing page for a Costa Rican swimwear brand inspired by the ocean, tropical freedom and natural elegance.",
+      "A complete e-commerce platform for a gym supplements store, combining storefront experience with inventory and sales administration.",
     problem:
-      "Monarca needed a premium digital presence that communicates its identity and guides visitors toward its collections and catalog.",
+      "The store needed to sell products online while managing product catalog, inventory, payments, and purchasing workflows.",
     impact:
-      "Delivered a responsive, lightweight brand experience with focused storytelling and clear paths to the external shop.",
+      "Built and deployed a full-featured e-commerce application with product catalog, shopping cart, and admin workflows on a Linux VPS.",
+    stack: ["Java 17", "Maven", "JSF 2.3", "PrimeFaces 12", "MariaDB", "Linux VPS"],
+    architecture: [
+      "JSF + PrimeFaces",
+      "Java EE services",
+      "MariaDB database",
+      "Linux VPS deployment",
+    ],
+    features: [
+      "Product catalog",
+      "Shopping cart functionality",
+      "Inventory management",
+      "Admin workflows",
+      "Production VPS deployment",
+    ],
+    visual: "vibrant",
+    privateProject: true,
+  },
+  {
+    number: "05",
+    title: "Concrebox Landing Page",
+    category: "Next.js business landing page",
+    summary:
+      "A conversion-focused landing page for a modular housing company, presenting service offerings and driving qualified lead generation.",
+    problem:
+      "Potential clients needed a clear understanding of modular housing models, benefits, process, and investment options.",
+    impact:
+      "Delivered a responsive product narrative explaining benefits, models, process, and investment while directing leads to sales conversations.",
+    stack: ["Next.js", "React", "TypeScript", "Vercel"],
+    architecture: [
+      "Next.js framework",
+      "React components",
+      "Responsive design",
+      "Vercel deployment",
+    ],
+    features: [
+      "Service presentation",
+      "Lead generation focus",
+      "Responsive design",
+      "Conversion optimization",
+      "Mobile-friendly layout",
+    ],
+    visual: "concrebox",
+    liveUrl: "https://concrebox.vercel.app/",
+    githubUrl: "https://github.com/dhc0510/concrebox",
+  },
+  {
+    number: "06",
+    title: "Monarca Swimwear Landing Page",
+    category: "Responsive frontend landing page",
+    summary:
+      "A polished landing page for a Costa Rican swimwear brand focused on product showcase, visual branding, and conversion-focused sections.",
+    problem:
+      "The brand needed a premium digital presence that communicates identity and guides visitors toward product collections and purchases.",
+    impact:
+      "Delivered a responsive, lightweight brand experience with product showcase, visual branding, and mobile-friendly layout.",
     stack: ["HTML", "CSS", "JavaScript", "Vercel"],
     architecture: [
       "Semantic HTML",
@@ -195,43 +237,15 @@ export const projects: Project[] = [
       "Static deployment",
     ],
     features: [
-      "Collection showcase",
+      "Product showcase",
+      "Visual branding",
+      "Mobile-friendly layout",
+      "Conversion-focused sections",
       "Brand storytelling",
-      "Responsive design",
-      "Catalog calls to action",
-      "FAQ section",
     ],
     visual: "monarca",
     liveUrl: "https://monarca-alpha.vercel.app/",
     githubUrl: "https://github.com/dhc0510/monarca",
-  },
-  {
-    number: "05",
-    title: "Concrebox",
-    category: "Next.js business landing page",
-    summary:
-      "A conversion-focused landing page for a Panamanian company that designs and manufactures customized modular homes.",
-    problem:
-      "Potential clients needed a clear way to understand the modular housing offer, compare models and start a sales conversation.",
-    impact:
-      "Created a responsive product narrative that explains benefits, models, process and investment while directing qualified leads to WhatsApp.",
-    stack: ["Next.js", "React", "Responsive CSS", "Vercel"],
-    architecture: [
-      "Next.js",
-      "React components",
-      "Responsive UI",
-      "Vercel deployment",
-    ],
-    features: [
-      "Modular home models",
-      "Benefits and process",
-      "Investment information",
-      "FAQ section",
-      "WhatsApp conversion flow",
-    ],
-    visual: "concrebox",
-    liveUrl: "https://concrebox.vercel.app/",
-    githubUrl: "https://github.com/dhc0510/concrebox",
   },
 ];
 
