@@ -98,7 +98,7 @@ export const projects: Project[] = [
       "Multiple companies needed a scalable solution to manage products, inventory levels, stock control, and administrative operations across different tenants.",
     impact:
       "Built a multi-tenant architecture with Spring Boot and React, enabling companies to manage their entire product lifecycle from a single platform.",
-    stack: ["Java Spring Boot", "React", "TypeScript", "MySQL", "Docker", "Git"],
+    stack: ["Java Spring Boot", "React", "TypeScript", "Vite", "MySQL", "Docker", "Git"],
     architecture: [
       "Multi-tenant Spring Boot",
       "React frontend",
@@ -126,7 +126,7 @@ export const projects: Project[] = [
       "Medical offices needed a dedicated system for scheduling appointments, managing patient information, and automating administrative tasks.",
     impact:
       "Delivered a responsive platform with Spring Boot backend, React frontend, authentication, and database-driven patient management.",
-    stack: ["Java Spring Boot", "React", "TypeScript", "MySQL", "Docker", "Git"],
+    stack: ["Java Spring Boot", "React", "TypeScript", "Vite", "MySQL", "Docker", "Git"],
     architecture: ["Spring Boot REST API", "React client", "MySQL", "Authentication layer"],
     features: [
       "Appointment scheduling",
