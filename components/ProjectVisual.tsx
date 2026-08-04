@@ -119,13 +119,13 @@ export function ProjectVisual({ type }: ProjectVisualProps) {
     );
   }
 
-  if (type === "monarca" || type === "concrebox") {
-    const isMonarca = type === "monarca";
+  if (type === "concrebox" || type === "newsflow") {
+    const isNewsflow = type === "newsflow";
 
     return (
       <div
         className={`${styles.visual} ${styles.realVisual} ${
-          isMonarca ? styles.realMonarca : styles.realConcrebox
+          isNewsflow ? styles.realNewsflow : styles.realConcrebox
         }`}
       >
         <div className={styles.browserFrame}>
@@ -136,28 +136,76 @@ export function ProjectVisual({ type }: ProjectVisualProps) {
               <span />
             </div>
             <small>
-              {isMonarca
-                ? "monarca-alpha.vercel.app"
-                : "concrebox.vercel.app"}
+              {isNewsflow ? "ncr-newsflow.local" : "concreboxpty.com"}
             </small>
           </div>
           <div className={styles.screenshotViewport}>
             <Image
-              src={
-                isMonarca
-                  ? "/projects/monarca-home.png"
-                  : "/projects/concrebox-home.png"
-              }
-              alt={
-                isMonarca
-                  ? "Monarca Swimwear live website homepage"
-                  : "Concrebox live website homepage"
-              }
+              src={isNewsflow ? "/projects/newsflow-newsroom.png" : "/projects/concrebox-home.png"}
+              alt={isNewsflow ? "NCR NewsFlow newsroom interface" : "Concrebox live website homepage"}
               fill
               sizes="(max-width: 980px) 100vw, 50vw"
               className={styles.realScreenshot}
               priority={false}
             />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (type === "agent") {
+    return (
+      <div className={`${styles.visual} ${styles.agent}`}>
+        <div className={styles.windowBar}>
+          <span />
+          <span />
+          <span />
+          <div className={styles.address}>agent-saas.local/dashboard</div>
+        </div>
+        <div className={styles.agentLayout}>
+          <aside className={styles.agentSidebar}>
+            <strong>AgentOS</strong>
+            {["Inbox", "Customers", "Knowledge", "AI Agent"].map((item, index) => (
+              <span key={item} className={index === 0 ? styles.agentActive : ""}>
+                {item}
+              </span>
+            ))}
+          </aside>
+          <div className={styles.agentPanel}>
+            <div className={styles.agentHeader}>
+              <div>
+                <small>Live conversations</small>
+                <strong>AI Sales & Support</strong>
+              </div>
+              <em>Human review on</em>
+            </div>
+            <div className={styles.agentStats}>
+              {[
+                ["84%", "Resolved by AI"],
+                ["21", "Open leads"],
+                ["4.8", "CSAT"],
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <strong>{value}</strong>
+                  <span>{label}</span>
+                </div>
+              ))}
+            </div>
+            <div className={styles.agentInbox}>
+              {[
+                ["WhatsApp", "Pricing question detected", "Lead"],
+                ["Knowledge", "Policy answer matched", "Ready"],
+                ["CRM", "Customer history updated", "Synced"],
+              ].map(([source, text, status]) => (
+                <div key={source}>
+                  <Check size={13} />
+                  <small>{source}</small>
+                  <span>{text}</span>
+                  <em>{status}</em>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export type Project = {
   stack: string[];
   architecture: string[];
   features: string[];
-  visual: "vibrant" | "medical" | "api" | "monarca" | "concrebox";
+  visual: "vibrant" | "medical" | "api" | "concrebox" | "newsflow" | "agent";
   featured?: boolean;
   privateProject?: boolean;
   liveUrl?: string;
@@ -78,7 +78,7 @@ export const skillGroups = [
   {
     title: "Infrastructure",
     description: "From source control to stable production deployments.",
-    skills: ["Docker", "Linux", "Nginx", "Git", "Maven", "npm"],
+    skills: ["Docker", "Linux", "Nginx", "Git", "Maven", "npm", "Flyway"],
   },
   {
     title: "Quality",
@@ -206,7 +206,7 @@ export const projects: Project[] = [
       "Next.js framework",
       "React components",
       "Responsive design",
-      "Vercel deployment",
+      "Custom domain deployment",
     ],
     features: [
       "Service presentation",
@@ -216,36 +216,62 @@ export const projects: Project[] = [
       "Mobile-friendly layout",
     ],
     visual: "concrebox",
-    liveUrl: "https://concrebox.vercel.app/",
+    liveUrl: "https://concreboxpty.com/",
     githubUrl: "https://github.com/dhc0510/concrebox",
   },
   {
     number: "06",
-    title: "Monarca Swimwear Landing Page",
-    category: "Responsive frontend landing page",
+    title: "NCR NewsFlow IA",
+    category: "AI-assisted editorial operations platform",
     summary:
-      "A polished landing page for a Costa Rican swimwear brand focused on product showcase, visual branding, and conversion-focused sections.",
+      "A private newsroom platform for NCR Noticias Costa Rica that supports article creation, source verification, editorial review, publishing workflows, and analytics with AI assistance.",
     problem:
-      "The brand needed a premium digital presence that communicates identity and guides visitors toward product collections and purchases.",
+      "Editorial teams need to move quickly while preserving human control over verification, review, publishing decisions, permissions, and source traceability.",
     impact:
-      "Delivered a responsive, lightweight brand experience with product showcase, visual branding, and mobile-friendly layout.",
-    stack: ["HTML", "CSS", "JavaScript", "Vercel"],
+      "Built a structured Spring Boot and React foundation for newsroom operations, including authentication, editorial workflows, source intelligence, recommendations, publishing, and analytics modules.",
+    stack: ["Java 17", "Spring Boot", "React", "TypeScript", "Vite", "MySQL", "Flyway", "Docker"],
     architecture: [
-      "Semantic HTML",
-      "Responsive CSS",
-      "Vanilla JavaScript",
-      "Static deployment",
+      "Spring Boot REST API",
+      "React + Vite frontend",
+      "MySQL + Flyway migrations",
+      "Docker Compose environment",
     ],
     features: [
-      "Product showcase",
-      "Visual branding",
-      "Mobile-friendly layout",
-      "Conversion-focused sections",
-      "Brand storytelling",
+      "AI-assisted news drafting",
+      "Source verification pipeline",
+      "Editorial review workflow",
+      "Publishing hub",
+      "Analytics and admin console",
     ],
-    visual: "monarca",
-    liveUrl: "https://monarca-alpha.vercel.app/",
-    githubUrl: "https://github.com/dhc0510/monarca",
+    visual: "newsflow",
+    privateProject: true,
+  },
+  {
+    number: "07",
+    title: "AI Business Agent SaaS",
+    category: "Multi-tenant AI sales and support SaaS",
+    summary:
+      "A SaaS product for businesses to automate customer support and sales with AI agents trained on each company's own information, supported by human oversight and CRM workflows.",
+    problem:
+      "Small and growing businesses need faster responses, organized customer history, and AI automation without losing visibility or human control over commercial conversations.",
+    impact:
+      "Designed a premium React and TypeScript frontend with protected routes, dashboard, inbox, conversation detail, CRM, knowledge base, AI agent configuration, WhatsApp channel, and mock operational data.",
+    stack: ["React", "TypeScript", "Vite", "Design System", "Mock APIs", "SaaS Architecture"],
+    architecture: [
+      "React application shell",
+      "Feature-based frontend modules",
+      "Mock API layer",
+      "Tenant-aware product model",
+    ],
+    features: [
+      "AI agent configuration",
+      "Conversation inbox",
+      "CRM and customer history",
+      "Business knowledge base",
+      "WhatsApp channel flow",
+    ],
+    visual: "agent",
+    privateProject: true,
   },
 ];
 

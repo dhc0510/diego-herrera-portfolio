@@ -720,16 +720,16 @@
   padding: 22px;
 }
 
-.realMonarca {
-  background:
-    radial-gradient(circle at 82% 0, rgba(49, 118, 126, 0.18), transparent 38%),
-    linear-gradient(145deg, #101517, #0d0e10 68%);
-}
-
 .realConcrebox {
   background:
     radial-gradient(circle at 85% 0, rgba(193, 141, 44, 0.13), transparent 34%),
     #111315;
+}
+
+.realNewsflow {
+  background:
+    radial-gradient(circle at 85% 0, rgba(220, 38, 38, 0.14), transparent 34%),
+    #101114;
 }
 
 .browserFrame {
@@ -780,175 +780,144 @@
   object-position: top center;
 }
 
-.monarca {
-  padding: 22px;
-  color: #24201d;
+.agent {
   background:
-    radial-gradient(circle at 90% 0, rgba(255, 194, 159, 0.5), transparent 32%),
-    #e9e0d5;
+    radial-gradient(circle at 88% 4%, rgba(20, 184, 166, 0.12), transparent 30%),
+    linear-gradient(145deg, #0d1117, #111114 72%);
 }
 
-.monarcaNav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 15px 18px;
-  border-radius: 12px 12px 0 0;
-  background: rgba(250, 246, 240, 0.92);
-  font-size: 8px;
-}
-
-.monarcaNav strong {
-  margin-right: auto;
-  font-family: Georgia, serif;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-}
-
-.monarcaNav div {
-  color: #7b6f67;
-}
-
-.monarcaHero {
+.agentLayout {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  min-height: 332px;
-  overflow: hidden;
-  border-radius: 0 0 12px 12px;
-  background: #f5efe7;
+  grid-template-columns: 132px 1fr;
+  min-height: 377px;
 }
 
-.monarcaCopy {
+.agentSidebar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 34px;
+  gap: 11px;
+  padding: 24px 16px;
+  border-right: 1px solid #25272c;
+  background: #101318;
 }
 
-.monarcaCopy small {
-  color: #9a6d55;
-  font-size: 7px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+.agentSidebar strong {
+  margin-bottom: 10px;
+  color: #f4f4f5;
+  font-size: 13px;
 }
 
-.monarcaCopy strong {
-  max-width: 250px;
-  margin-top: 12px;
-  font-family: Georgia, serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.03;
-  letter-spacing: -0.045em;
-}
-
-.monarcaCopy p {
-  max-width: 230px;
-  color: #756a62;
-  font-size: 9px;
-  line-height: 1.55;
-}
-
-.monarcaCopy > span {
-  margin-top: 8px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid #2c2825;
+.agentSidebar span {
+  padding: 8px 9px;
+  border-radius: 7px;
+  color: #848b98;
   font-size: 8px;
 }
 
-.monarcaScene {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(155deg, transparent 48%, rgba(255, 255, 255, 0.32)),
-    #dcb9a5;
+.agentSidebar .agentActive {
+  color: #e7fffa;
+  background: rgba(20, 184, 166, 0.14);
 }
 
-.sun {
-  position: absolute;
-  top: 34px;
-  right: 48px;
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  background: rgba(255, 231, 190, 0.75);
+.agentPanel {
+  padding: 28px;
 }
 
-.waveOne,
-.waveTwo {
-  position: absolute;
-  right: -18%;
-  bottom: -100px;
-  width: 125%;
-  height: 230px;
-  border-radius: 50% 48% 0 0;
-  background: #87adb1;
-  transform: rotate(-5deg);
+.agentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-.waveTwo {
-  right: -36%;
-  bottom: -145px;
-  background: #527d84;
-  transform: rotate(9deg);
+.agentHeader div {
+  display: flex;
+  flex-direction: column;
 }
 
-.swimsuit {
-  position: absolute;
-  z-index: 2;
-  top: 83px;
-  left: 50%;
-  width: 90px;
-  height: 152px;
-  border-radius: 42% 42% 34% 34%;
-  background: linear-gradient(145deg, #d87962, #a94845);
-  box-shadow: 15px 22px 35px rgba(83, 49, 43, 0.22);
-  transform: translateX(-50%) rotate(5deg);
+.agentHeader small {
+  color: #7b8493;
+  font-size: 8px;
 }
 
-.swimsuit::before {
-  position: absolute;
-  top: -18px;
-  left: 17px;
-  width: 55px;
-  height: 43px;
-  border-radius: 50% 50% 20% 20%;
-  background: #c55f52;
-  content: "";
+.agentHeader strong {
+  margin-top: 4px;
+  color: #f4f4f5;
+  font-size: 18px;
 }
 
-.swimsuit i,
-.swimsuit b {
-  position: absolute;
-  top: 25px;
-  width: 30px;
-  height: 64px;
-  background: #dcb9a5;
-}
-
-.swimsuit i {
-  left: -2px;
-  border-radius: 0 60% 50% 0;
-  transform: rotate(-8deg);
-}
-
-.swimsuit b {
-  right: -2px;
-  border-radius: 60% 0 0 50%;
-  transform: rotate(8deg);
-}
-
-.monarcaScene em {
-  position: absolute;
-  right: 17px;
-  bottom: 15px;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Georgia, serif;
+.agentHeader em {
+  padding: 7px 9px;
+  border: 1px solid rgba(20, 184, 166, 0.24);
+  border-radius: 999px;
+  color: #99f6e4;
+  background: rgba(20, 184, 166, 0.08);
   font-size: 8px;
   font-style: normal;
-  letter-spacing: 0.28em;
+}
+
+.agentStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.agentStats div {
+  padding: 15px;
+  border: 1px solid #25272c;
+  border-radius: 10px;
+  background: #141820;
+}
+
+.agentStats strong {
+  display: block;
+  color: #f4f4f5;
+  font-size: 20px;
+}
+
+.agentStats span {
+  display: block;
+  margin-top: 5px;
+  color: #8e97a6;
+  font-size: 8px;
+}
+
+.agentInbox {
+  display: grid;
+  gap: 10px;
+  margin-top: 13px;
+}
+
+.agentInbox div {
+  display: grid;
+  grid-template-columns: 18px 58px 1fr auto;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  border: 1px solid #25272c;
+  border-radius: 10px;
+  background: #12151b;
+}
+
+.agentInbox svg {
+  color: #2dd4bf;
+}
+
+.agentInbox small {
+  color: #7b8493;
+  font-size: 8px;
+}
+
+.agentInbox span {
+  color: #d4d9e2;
+  font-size: 9px;
+}
+
+.agentInbox em {
+  color: #fde68a;
+  font-size: 8px;
+  font-style: normal;
 }
 
 .concrebox {
@@ -1183,7 +1152,7 @@
   .commerce,
   .api,
   .frontend,
-  .monarca,
+  .agent,
   .concrebox,
   .realVisual {
     padding: 14px;
@@ -1249,34 +1218,61 @@
     display: none;
   }
 
-  .monarcaHero,
+  .agentLayout {
+    grid-template-columns: 1fr;
+    min-height: 300px;
+  }
+
+  .agentSidebar {
+    display: none;
+  }
+
+  .agentPanel {
+    padding: 18px 12px;
+  }
+
+  .agentHeader {
+    align-items: flex-start;
+  }
+
+  .agentStats {
+    gap: 7px;
+  }
+
+  .agentStats div {
+    padding: 10px;
+  }
+
+  .agentStats strong {
+    font-size: 15px;
+  }
+
+  .agentInbox div {
+    grid-template-columns: 18px 1fr auto;
+  }
+
+  .agentInbox small {
+    display: none;
+  }
+
   .concreboxHero {
     min-height: 280px;
   }
 
-  .monarcaCopy,
   .concreboxCopy {
     padding: 21px 17px;
   }
 
-  .monarcaCopy strong,
   .concreboxCopy strong {
     font-size: 20px;
   }
 
-  .monarcaCopy p,
   .concreboxCopy p {
     font-size: 8px;
   }
 
-  .monarcaNav div,
   .concreboxNav > div:nth-child(2) {
     display: none;
-  }
-
-  .swimsuit {
-    width: 68px;
-    height: 122px;
   }
 
   .house {

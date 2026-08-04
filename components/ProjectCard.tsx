@@ -97,7 +97,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </a>
           {project.liveUrl ? (
             <a href={project.liveUrl} target="_blank" rel="noreferrer">
-              Live demo <ExternalLink size={15} />
+              Visit live site <ExternalLink size={15} />
             </a>
           ) : (
             <a href="#contact">
