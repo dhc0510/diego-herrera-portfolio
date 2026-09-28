@@ -34,9 +34,9 @@ export const metrics = [
     detail: "Reliably managed",
   },
   {
-    value: "40%",
-    label: "Less manual work",
-    detail: "Through automation",
+    value: "AI",
+    label: "Assisted platforms",
+    detail: "Human-controlled workflows",
   },
   {
     value: "VPS",
@@ -53,9 +53,9 @@ export const skillGroups = [
       "Java",
       "Spring Boot",
       "REST APIs",
-      "JWT",
+      "JWT Authentication",
       "RBAC",
-      "MVC",
+      "MVC Architecture",
     ],
   },
   {
@@ -68,22 +68,28 @@ export const skillGroups = [
       "JavaScript",
       "HTML",
       "CSS",
+      "Responsive Web Design",
     ],
   },
   {
     title: "Data",
     description: "Relational modeling for operational business systems.",
-    skills: ["MySQL", "SQL Server", "SQLite", "Database Design"],
+    skills: ["MySQL", "SQL Server", "SQLite", "MariaDB", "SQL", "Relational Database Design"],
   },
   {
     title: "Infrastructure",
     description: "From source control to stable production deployments.",
-    skills: ["Docker", "Linux", "Nginx", "Git", "Maven", "npm", "Flyway"],
+    skills: ["Docker", "Linux", "Nginx", "Git", "GitHub", "Maven", "npm", "Vercel", "Flyway", "Railway"],
   },
   {
     title: "Quality",
     description: "Clean architecture with testable, reusable code.",
-    skills: ["JUnit", "API Testing", "Responsive QA"],
+    skills: ["JUnit", "API Testing", "Debugging"],
+  },
+  {
+    title: "AI Development & Methodologies",
+    description: "Specification-driven development and multi-agent workflows.",
+    skills: ["Obsidian", "Specification-Driven Development (SDD)", "OpenCode", "Multi-agent Workflows", "Herdr"],
   },
 ];
 
@@ -246,33 +252,6 @@ export const projects: Project[] = [
     visual: "newsflow",
     privateProject: true,
   },
-  {
-    number: "07",
-    title: "AI Business Agent SaaS",
-    category: "Multi-tenant AI sales and support SaaS",
-    summary:
-      "A SaaS product for businesses to automate customer support and sales with AI agents trained on each company's own information, supported by human oversight and CRM workflows.",
-    problem:
-      "Small and growing businesses need faster responses, organized customer history, and AI automation without losing visibility or human control over commercial conversations.",
-    impact:
-      "Designed a premium React and TypeScript frontend with protected routes, dashboard, inbox, conversation detail, CRM, knowledge base, AI agent configuration, WhatsApp channel, and mock operational data.",
-    stack: ["React", "TypeScript", "Vite", "Design System", "Mock APIs", "SaaS Architecture"],
-    architecture: [
-      "React application shell",
-      "Feature-based frontend modules",
-      "Mock API layer",
-      "Tenant-aware product model",
-    ],
-    features: [
-      "AI agent configuration",
-      "Conversation inbox",
-      "CRM and customer history",
-      "Business knowledge base",
-      "WhatsApp channel flow",
-    ],
-    visual: "agent",
-    privateProject: true,
-  },
 ];
 
 export const experience = [
@@ -297,7 +276,7 @@ export const experience = [
       "Designed internal systems that made everyday administration faster and more dependable.",
     highlights: [
       "Developed management systems for appointment scheduling and inventory control.",
-      "Automated workflows that reduced manual administrative tasks by 40%.",
+      "Automated administrative workflows for everyday business operations.",
       "Structured databases supporting more than 1,000 business records.",
     ],
   },

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Diego Herrera Chaves",
   },
   description:
-    "Software Engineering student and Full-Stack Developer building production-ready applications with Java, Spring Boot, React, MySQL, Docker and Linux.",
+    "Software Engineering student graduating in April 2027 and Full-Stack Developer building business applications and AI-assisted platforms with Java, Spring Boot, React, TypeScript, MySQL and Docker.",
   keywords: [
     "Diego Herrera Chaves",
     "Software Engineer Costa Rica",
@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "Java",
     "Spring Boot",
     "React",
+    "TypeScript",
     "MySQL",
   ],
   authors: [{ name: "Diego Herrera Chaves" }],

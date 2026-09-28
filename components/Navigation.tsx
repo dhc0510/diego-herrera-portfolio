@@ -182,7 +182,7 @@ export function Navigation() {
                 </div>
                 <div className={styles.mobileStatus}>
                   <span />
-                  Available for 2026 opportunities
+                  Available for entry-level opportunities
                 </div>
               </motion.div>
             </div>

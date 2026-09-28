@@ -33,7 +33,7 @@ import { ProjectCard } from "./ProjectCard";
 import { Reveal } from "./Reveal";
 import styles from "./Portfolio.module.css";
 
-const skillIcons = [ServerCog, Code2, Database, SquareTerminal, CheckCircle2];
+const skillIcons = [ServerCog, Code2, Database, SquareTerminal, CheckCircle2, Sparkles];
 
 export function Portfolio() {
   const [submitted, setSubmitted] = useState(false);
@@ -78,7 +78,7 @@ export function Portfolio() {
             transition={{ duration: 0.55 }}
           >
             <span />
-            Available for 2026 software engineering opportunities
+            Available for entry-level software engineering opportunities
           </motion.div>
 
           <motion.div
@@ -98,8 +98,8 @@ export function Portfolio() {
             </h1>
             <p className={styles.heroSummary}>
               I&apos;m Diego Herrera Chaves, a Software Engineering student
-              graduating in 2026. I design and deploy reliable business
-              applications with Java, Spring Boot, React, MySQL, Docker and
+              graduating in April 2027. I design and deploy reliable business
+              applications and AI-assisted platforms with Java, Spring Boot, React, TypeScript, MySQL, Docker and
               Linux.
             </p>
 
@@ -373,11 +373,11 @@ export function Portfolio() {
               <p>Universidad Latina de Costa Rica</p>
               <div className={styles.graduation}>
                 <span>Expected graduation</span>
-                <strong>December 2026</strong>
+                <strong>April 2027</strong>
               </div>
               <div className={styles.school}>
                 <span>High School Diploma</span>
-                <strong>Westland High School · 2022</strong>
+                <strong>Westland High School · December 2022</strong>
               </div>
               <a href={links.resume} download>
                 <Download size={15} /> Full resume
@@ -398,7 +398,7 @@ export function Portfolio() {
               <span>great together.</span>
             </h2>
             <p>
-              I&apos;m currently open to Software Engineer, Backend Developer
+              I&apos;m currently open to entry-level Software Engineer, Backend Developer
               and Full-Stack Developer opportunities.
             </p>
             <div className={styles.contactLinks}>
